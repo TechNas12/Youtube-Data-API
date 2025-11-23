@@ -1,4 +1,4 @@
-# 📌 YouTube Channel Video Extractor — Streamlit Dashboard
+# 📌 YouTube Channel Data Extractor — Streamlit Dashboard
 
 A clean, modern **Streamlit dashboard** that extracts complete YouTube video data from any channel (or multiple channels) using the **YouTube Data API v3**.
 
@@ -203,3 +203,4 @@ See `LICENSE` for more information.
 ## ⭐ Support
 
 If you found this useful, please ⭐ **star the repository** — it really helps!
+
