@@ -1,234 +1,73 @@
-📌 Overview
-
-This Power BI dashboard visualizes 12 months of YouTube data from 10 major Indian tech channels.
-It converts raw API data into interactive, insight-driven visuals to understand:
-
-Upload patterns
-
-Long-form vs short-form performance
-
-Engagement behavior
-
-Monthly view cycles
-
-Creator strategy archetypes
-
-High-performing video traits
-
-This is the BI layer of the project — designed to communicate insights at a glance, with drilldowns for deeper investigation.
-
-🛠️ Power BI Workflow
-1️⃣ Data Loading
-
-Imported pre-cleaned CSVs generated from Python:
-
-channels.csv
-
-videos.csv
-
-monthly_stats.csv
-
-video_details.csv
-
-Each file was connected through relationships based on:
-
-channelId
-
-videoId
-
-publishedAt (for time-series)
-
-2️⃣ Data Modeling
-
-Inside Power BI, I:
-
-✔ Built relationships (Star Schema)
-
-Channels (Dimension)
-
-Videos (Fact)
-
-MonthlyStats (Fact)
-
-VideoDetails (Fact)
-
-✔ Created custom DAX measures such as:
-
-Engagement Ratio
-
-Views-to-ContentType
-
-Upload Frequency
-
-Shorts-to-Videos Ratio
-
-Views per Minute
-
-Top Content by Month
-
-Duration Buckets (0–30s, 30–60s, 1–3min, 3–10min, 10+ min)
-
-✔ Built calculated tables
-
-For duration grouping and monthly summaries.
-
-The model was optimized to ensure snappy slicers, quick filter changes, and smooth cross-interaction.
-
-🖥️ Dashboard Pages Breakdown
-🔴 Page 1 — Creator Landscape Overview
-
-A top-level summary of the entire dataset including:
-
-Total videos (28K)
-
-Total shorts (3.11K)
-
-Total duration (2M minutes)
-
-Average subscribers (7.9M)
-
-Channel-level rankings:
-
-Subscribers
-
-Views
-
-Total videos
-
-Visuals used:
-
-Bar charts
-
-Donut charts
-
-KPI cards
-
-Comparative bars for long vs short form
-
-This page gives an instant market-level snapshot.
-
-🔵 Page 2 — Quantity vs Quality Analysis
-
-Focus: Does uploading more make a creator grow faster?
-
-Visuals:
-
-Subscribers vs Total Videos (scatter)
-
-Subscribers vs Total Views (scatter)
-
-A narrative textbox
-
-Correlation understanding
-
-This is where the insight “Quality beats quantity” becomes visually obvious.
-
-🔴 Page 3 — Creator Deep Dive (Technical Guruji Example)
-
-This is the most advanced page in the report.
-
-Features:
-
-Channel selector (slicer)
-
-Content-type bar (videos vs shorts)
-
-Monthly view trends
-
-Engagement ratio by month
-
-Upload frequency per month
-
-Duration vs engagement visualization
-
-Top 10+ performing videos table with:
-
-Views
-
-Likes
-
-Comments
-
-Month
-
-Content type
-
-This page is designed like a creator analytics console.
-
-🟢 Page 4 — Engagement Contribution + Long vs Short Form
-
-Purpose: Understand how different content types contribute to total engagement.
-
-Highlights:
-
-Shorts vs Video contributions
-
-Top channels by views
-
-Upload type selection
-
-KPI cards for:
-
-Total long videos
-
-Total shorts
-
-Total views from each
-
-This page makes it clear that long videos carry long-term view volume, while shorts spike discoverability.
-
-🔵 Page 5 — Strategic Insights
-
-A clean, executive-level summary page that outlines:
-
-✔ Creator Strategy Archetypes
-
-Long-Form Titans
-
-Hybrid Strategists
-
-Shorts-Heavy Experimenters
-
-✔ What Works (Data-backed)
-
-Deep long-form videos
-
-Launch-cycle alignment
-
-Strategic shorts
-
-Consistent upload cadence
-
-✔ What Doesn’t
-
-Shorts spam
-
-Weak-topic long videos
-
-Skipping peak months
-
-This is built for hiring managers, marketers, and stakeholders to quickly understand the story.
-
-📈 Key BI Skills Demonstrated
-
-This Power BI component showcases:
-
-Data modeling (star schema)
-
-DAX calculations
-
-Time-intelligence functions
-
-Measure optimization
-
-Cross-page filtering
-
-UX-friendly design
-
-Color-coded storytelling
-
-Drill-down insights
-
-KPI-driven BI reporting
-
-This is beyond “just charts” — it’s a full BI solution.
+# 📊 Power BI Dashboard — Tech YouTube Channels Analytics
+
+This Power BI dashboard visualizes 12 months of YouTube data from India's top tech creators.  
+It transforms raw API data into insights about content strategy, engagement behavior, and creator growth patterns.
+
+---
+
+## 🚀 What This Dashboard Does
+
+- Analyzes **28K+ long videos** & **3.1K shorts**
+- Compares **long-form vs short-form** performance
+- Reveals **upload frequency**, **duration trends**, and **seasonal spikes**
+- Highlights **top-performing creators** based on views, likes, comments
+- Maps **creator strategy archetypes** based on actual data
+- Provides **KPI-driven insights** for fast decision-making
+
+---
+
+## 🛠️ Power BI Work Done
+
+### ✔ Data Modeling  
+- Star schema linking channels, videos, and monthly stats  
+- Relationship design using `channelId`, `videoId`, and timestamps  
+- Calculated tables for duration buckets & monthly summaries  
+
+### ✔ DAX Measures  
+Custom measures built for:  
+- Engagement Ratio  
+- Views per Minute  
+- Shorts-to-Videos Ratio  
+- Views-to-ContentType  
+- Upload Frequency  
+- Long-form vs Shorts Contribution  
+
+### ✔ Dashboard Features  
+- Interactive slicers  
+- KPI cards  
+- Drill-down charts  
+- Cross-filtering for channels & content types  
+- Clean, UX-focused layout  
+
+---
+
+## 📈 Key Insights Unlocked
+
+- **Quality > Quantity** — fewer strong uploads outperform high-volume channels  
+- **Long videos drive 85–90% of total views**, shorts drive discovery  
+- **Peak months** (Sep–Nov) show major spikes due to tech launches  
+- **Engagement doesn’t scale with subscribers** — smaller channels often outperform  
+- **Channel clusters** naturally form:  
+  - Long-form Titans  
+  - Hybrid Strategists  
+  - Shorts-Heavy Experimenters  
+
+---
+
+## 🧰 Tech Used
+
+- **Power BI Desktop**  
+- **YouTube Data API v3**  
+- **Python (Pandas, NumPy)**  
+- **DAX + Data Modeling**  
+
+---
+
+## 📂 Files Included
+
+- dashboard.pbix
+- report.pdf
+- data/
+- notebooks/
+- images/
+- README.md
