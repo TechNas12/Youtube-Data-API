@@ -16,6 +16,23 @@ It transforms raw API data into insights about content strategy, engagement beha
 
 ---
 
+## 📸 Dashboard Preview
+
+### 🔹 Overview
+![Dashboard Page 1](./1.png)
+
+### 🔹 Quantity vs Quality
+![Dashboard Page 2](./2.png)
+
+### 🔹 Creator Deep Dive
+![Dashboard Page 3](./3.png)
+
+### 🔹 Engagement Breakdown
+![Dashboard Page 4](./4.png)
+
+### 🔹 Final Insights Summary
+![Dashboard Page 5](./5.png)
+
 ## 🛠️ Power BI Work Done
 
 ### ✔ Data Modeling  
